@@ -3,7 +3,7 @@ package DansDilemma;
 public class DansDilemma {
 
     public Integer dilemmaOfTwo(Double input1, Double input2) {
-        return null;
+        return new Integer((int) (input1+ input2));
     }
 
     public Integer dilemmaOfThree(Double input1, Double input2, Double input3) {

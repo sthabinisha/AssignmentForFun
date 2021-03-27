@@ -217,7 +217,7 @@ public class ArrayListsTest {
         // When
         boolean actual = arrayLists.happyList(original);
         // Then
-        Assert.assertFalse(actual);
+        Assert.assertTrue(actual);
     }
 
 }
