@@ -1,6 +1,8 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ArrayLists {
 
@@ -33,6 +35,24 @@ public class ArrayLists {
     }
 
     public boolean happyList(ArrayList<String> original) {
+
+        Set<Character> set = new HashSet<>();
+        int len = original.size();
+        if (len == 0) {
+
+            return true;
+        }
+        for(int i = 0; i < len; i++) {
+
+            for(char c : original.get(i).toCharArray())
+                if(set.contains(c)){
+                   return true;
+                }else{
+                    set.add(c);
+                }
+
+        }
+
         return false;
     }
 }

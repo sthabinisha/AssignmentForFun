@@ -47,9 +47,9 @@ public class DansDilemma {
         if (index == r)
         {
             res.add(data[0]+data[1]);
-            res.add(data[1]+data[0]);
+
             res.add(data[0]*data[1]);
-            res.add(data[1]*data[0]);
+
             res.add(data[0]/data[1]);
             res.add(data[1]/data[0]);
             res.add(data[0]-data[1]);
